@@ -1,42 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="./client/public/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ToDo -- Group4</title>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./client/public/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ToDo -- Group4</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="./client/styles/index.css" rel="stylesheet" />
+</head>
+<body>
+  <div id="root"></div>
 
-    <link href="./client/styles/index.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div id="root"></div>
-
-    <header>
-      <div class="logo">
-        <img src="./planning/Assets/logoToDo.png" alt="logoToDo" />
+  <header>
+    <h1>Todo List</h1>
+  </header>
+  <div class="container">
+    <form>
+      <input type="text" class="todo-input" placeholder="Create a new todo...">
+      <button class="add-button" type="button" title="Add">
+        <i class="fas fa-plus"></i>
+      </button>
+      <button class="remove-button" type="button" title="Remove">
+        <i class="fas fa-minus"></i>
+      </button>
+      <div class="clear-all">
+        <button class="clearAll-button" type="button" title="Clear All">
+          <i class="far fa-window-close"></i>
+        </button>
       </div>
-      <div class="sort">sort dropdown</div>
-    </header>
-
-    <form class="input-form">
-      <input type="text" class="todo-input" />
-      <button class="add-button">add-button</button>
-    </form>
-
-    <div class="user-list">
-      <ul></ul>
-    </div>
-
-    <div class="user-list-button">
-      <button class="remove-button">remove-button</button>
-    </div>
-
-    <footer>
-      <div class="night-toggle">
-        <button class="switch">night-button</button>
+      <div class="night-mood">
+        <button class="nightMood-button" type="button" title="Night Mood">
+          <i class="fas fa-moon"></i>
+        </button>
       </div>
-    </footer>
-
-    <script type="module" src="./client/src/init/index.js"></script>
-  </body>
+      <div class="select">
+        <select name="todos" class="sorting-todo">
+          <option value="new-old">New->Old</option>
+          <option value="old-new">Old-New</option>
+        </select>
+      </div>
+  </div>
+  </form>
+  <div class="user-list">
+    <ul class="todo-list" id="ul_o"></ul>
+  </div>
+  <footer>
+    Hack Your Future Group Project
+  </footer>
+  <script type="module" src="./client/src/init/index.js"></script>
+</body>
 </html>
