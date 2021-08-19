@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="./client/public/favicon.svg" />
@@ -14,12 +15,14 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="./client/styles/index.css" rel="stylesheet" />
 </head>
+
 <body>
   <div id="root"></div>
 
   <header>
     <h1>Todo List</h1>
   </header>
+  <section class="menu">
   <div class="container">
     <form>
       <input type="text" class="todo-input" placeholder="Create a new todo...">
@@ -29,27 +32,29 @@
       <button class="remove-button" type="button" title="Remove">
         <i class="fas fa-minus"></i>
       </button>
-      <div class="clear-all">
+      
         <button class="clearAll-button" type="button" title="Clear All">
           <i class="far fa-window-close"></i>
         </button>
-      </div>
-      <div class="night-mood">
+      
         <button class="nightMood-button" type="button" title="Night Mood">
           <i class="fas fa-moon"></i>
         </button>
-      </div>
+    
       <div class="select">
         <select name="todos" class="sorting-todo">
           <option value="new-old">New->Old</option>
-          <option value="old-new">Old-New</option>
+          <option value="old-new">Old->New</option>
         </select>
       </div>
   </div>
   </form>
+</section>
+<section class="List">
   <div class="user-list">
     <ul class="todo-list" id="ul_o"></ul>
   </div>
+</section>
   <footer>
     Hack Your Future Group Project
   </footer>

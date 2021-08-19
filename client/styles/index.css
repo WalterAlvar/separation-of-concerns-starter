@@ -18,6 +18,7 @@ body {
 header {
   font-size: 1.5rem;
 }
+
 .container {
   width: 100%;
   margin-left: auto;
@@ -34,6 +35,7 @@ header .logo img {
   width: 20%;
   height: 100%;
 }
+
 header,
 form {
   min-height: 20vh;
@@ -143,6 +145,7 @@ span {
   justify-items: center;
   vertical-align: center;
 }
+
 footer {
   position: fixed;
   left: 0;

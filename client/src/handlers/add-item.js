@@ -11,6 +11,6 @@ export const addItem = (event) => {
   todoDiv.append(newItem);
   todoList.append(newItem);
 
-  //  Clear todo input value
+  //  clear todo input value
   todoInput.value = '';
 };
