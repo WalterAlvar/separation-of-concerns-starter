@@ -22,7 +22,7 @@ export const addItem = (event) => {
   cb.id = 'chk-' + itemName;
   cb.checked = false;
   newLi.appendChild(cb);   // Append the checkbox to the <li>
-  var newItem = document.createTextNode(itemName);  // Create the text node after the the checkbox
+  const newItem = document.createTextNode(itemName);  // Create the text node after the the checkbox
   newLi.appendChild(newItem);  // Append the text node to the <li>
   todoList.appendChild(newLi);   // Append the <li> to the <ul>
 
