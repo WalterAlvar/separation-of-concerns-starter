@@ -169,3 +169,7 @@ footer button:hover {
   background: rgba(163, 163, 160, 0.20351890756302526);
   color: white;
 }
+
+input {
+  margin-right: 10px;
+}
