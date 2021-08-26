@@ -58,14 +58,12 @@ const markCompleted = (event) => {
 
 }
 
-function myFunction() {
-    var x = document.getElementById("myDIV");
-
-    /*Here you missspelled "mystyle"*/
-    if (x.classList.contains("mystyle")) {
-        x.classList.replace("mystyle", "mystyle1");
-    } else if (x.classList.contains("mystyle1")) {
-        x.classList.replace("mystyle1", "mystyle");
+const completedItem() {
+    let checkedItem = document.getElementById('chk-');
+    if (checkedItem.classList.contains("uncompleted")) {
+        checkedItem.classList.replace("uncompleted", "completed");
+    } else if (checkedItem.classList.contains("completed")) {
+        checkedItem.classList.replace("completed", "uncompleted");
     }
 }
 

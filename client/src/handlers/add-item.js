@@ -14,6 +14,7 @@ export const addItem = (event) => {
       checkBox.type = 'checkbox';
       checkBox.id = `chk-${newToDoName}`;
       checkBox.checked = false;
+      checkBox.classList = 'uncompleted'; // Start with a 'uncompleted' task for css handling
       newToDoItem.appendChild(checkBox); // Append the checkbox to the <li>
       const newItemText = document.createTextNode(newToDoName); // Create the text node after the checkbox
       newToDoItem.appendChild(newItemText); // Append the text node to the <li>
