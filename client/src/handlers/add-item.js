@@ -17,6 +17,7 @@ export const addItem = (event) => {
       newToDoItem.appendChild(checkBox); // Append the checkbox to the <li>
       const newItemText = document.createTextNode(newToDoName); // Create the text node after the checkbox
       newToDoItem.appendChild(newItemText); // Append the text node to the <li>
+      newToDoItem.classList.add('todo-item'); // Add a class for css styles
       todoDiv.append(newToDoItem);
       todoList.append(newToDoItem);
 
