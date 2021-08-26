@@ -173,3 +173,7 @@ footer button:hover {
 input {
   margin-right: 10px;
 }
+
+.linethrough {
+  text-decoration: line-through;
+}

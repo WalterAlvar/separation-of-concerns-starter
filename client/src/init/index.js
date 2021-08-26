@@ -7,3 +7,5 @@ import '../handlers/remove-item.js';
 import '../listeners/remove-button-listener.js';
 import '../listeners/nightmode-listener.js';
 
+import '../listeners/done-item-listener.js';
+import '../handlers/done-item.js';
