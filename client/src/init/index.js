@@ -5,11 +5,52 @@ import '../listeners/clear-button-listener.js';
 
 import '../handlers/remove-item.js';
 import '../listeners/remove-button-listener.js';
-import '../listeners/nightmode-listener.js';
+//import '../listeners/nightmode-listener.js';
+
+
+
 
 //sort list
 
+const todoList = document.querySelector('.todo-list');
 
+const filterOption = document.querySelector('.sorting-todo');
+
+// Event listener
+
+filterOption.addEventListener('click', filterToDo);
+
+
+function filterToDo(e) {
+  const toDos = todoList.childNodes;
+  toDos.forEach(function(toDos){
+    switch(e.target.value){
+      case "all":
+        todo.style.display = 'flex';
+        break;
+      case "completed":
+        if (todo.classList.contains('completed')){
+          todo.style.display = 'flex';
+        }else{
+          todo.style.display = 'none';
+        }
+        break;
+      case "uncompleted":
+        if (!todo.classList.contains('completed')){
+          todo.style.display = 'flex';
+        }else{
+          todo.style.display = 'none';
+        }
+        break;    
+    }
+  });
+}
+
+
+
+
+
+/*
 const sortBtn = document.querySelector('.sorting-todo');
 sortBtn.addEventListener('click', sortList);
 
@@ -21,8 +62,8 @@ const sortList = (event) => {
     const sortedList = todoList
   };  
 
+/////try2
 
-/*
   const sortWords = (event) => {
     const howToSort = event.target.value;//gather user input from DOM
     const sorted = sortStrings(data.words, howToSort);
