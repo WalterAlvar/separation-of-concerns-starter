@@ -1,13 +1,16 @@
 const todoList = document.querySelector('.todo-list');
 
 export const removeItem = (event) => {
-    event.preventDefault();
-    const ul = document.getElementById("ul_o");
-    const todoListItems = ul.getElementsByTagName("li");
-    for (let i = 0; i < todoListItems.length; i++) {
-       if(document.getElementById('chk-'+todoListItems[i].innerText).checked){
-        todoList.removeChild(todoListItems[i]);
-        i = i -2;
-       }
+  event.preventDefault();
+  const todoList = document.getElementById('ul_o');
+  const todoListItems = todoList.getElementsByTagName('li');
+  const deletedList = [];
+  for (let i = 0; i < todoListItems.length; i++) {
+    if (todoListItems[i].className === 'linethrough') {
+      deletedList.push(todoListItems[i]);
     }
-}
+  }
+  deletedList.forEach((element) => {
+    todoList.removeChild(element); // removing selected items from the list
+  });
+};
