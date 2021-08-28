@@ -102,7 +102,6 @@ li {
   padding: 0.7rem;
   font-size: 1.2rem;
   text-align: left;
-  transition: all 1s ease-in;
 }
 li:first-letter {
   text-transform: capitalize;
@@ -111,14 +110,14 @@ li:not(:last-child) {
   margin-bottom: 5px;
 }
 
-/* Styles for every new li added 
+/* Styles for every new li added */
 
-.todo-list {
-  font-family: 'STIX Two Text', serif;
+li.todo-item {
   color: #2b2b2b;
+  background-color: antiquewhite;
   transition: all 0.5s ease;
 }
-*/
+
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -188,4 +187,6 @@ input {
 
 .linethrough {
   text-decoration: line-through;
+  transition: all 0.5s ease;
+  opacity: 50%;
 }
