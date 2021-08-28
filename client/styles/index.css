@@ -16,6 +16,7 @@ body {
 }
 body.active {
   background: #2b2b2b;
+  transition: all 0.5s ease-in;
 }
 
 header {
@@ -24,6 +25,7 @@ header {
 
 h1.active {
   color: antiquewhite;
+  transition: all 1s ease-in;
 }
 
 .container {
@@ -94,11 +96,13 @@ form button:hover {
   flex: 1;
 }
 li {
+  font-family: 'STIX Two Text', serif;
   background-color: white;
   box-shadow: 2px 1px 0px rgba(191, 189, 214, 1);
   padding: 0.7rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: left;
+  transition: all 1s ease-in;
 }
 li:first-letter {
   text-transform: capitalize;
@@ -107,6 +111,14 @@ li:not(:last-child) {
   margin-bottom: 5px;
 }
 
+/* Styles for every new li added 
+
+.todo-list {
+  font-family: 'STIX Two Text', serif;
+  color: #2b2b2b;
+  transition: all 0.5s ease;
+}
+*/
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
