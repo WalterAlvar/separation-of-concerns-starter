@@ -1,5 +1,6 @@
 const body = document.querySelector('body');
 const headerTd = document.querySelector('h1');
+
 // Switch style to night mode:
 export const toggle = document.getElementById('toggle');
 
