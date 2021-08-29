@@ -10,7 +10,8 @@ export const removeItem = (event) => {
       deletedList.push(todoListItems[i]);
     }
   }
+  // removing selected items from the list
   deletedList.forEach((element) => {
-    todoList.removeChild(element); // removing selected items from the list
+    todoList.removeChild(element); 
   });
 };
