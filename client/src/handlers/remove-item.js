@@ -2,11 +2,11 @@ const todoList = document.querySelector('.todo-list');
 
 export const removeItem = (event) => {
   event.preventDefault();
-  const todoList = document.getElementById('ul_o');
-  const todoListItems = todoList.getElementsByTagName('li');
+  const todoLists = document.getElementById('ul_o');
+  const todoListItems = todoLists.getElementsByTagName('li');
   const deletedList = [];
   for (let i = 0; i < todoListItems.length; i++) {
-    if (todoListItems[i].className === 'linethrough') {
+    if (todoListItems[i].className.includes('linethrough')) {
       deletedList.push(todoListItems[i]);
     }
   }
