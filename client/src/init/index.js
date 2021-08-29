@@ -9,3 +9,7 @@ import '../listeners/nightmode-listener.js';
 
 import '../listeners/done-item-listener.js';
 import '../handlers/done-item.js';
+
+
+import '../listeners/sort-list-listener.js';
+import '../handlers/sort-list.js';
