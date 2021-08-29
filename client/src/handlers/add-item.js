@@ -12,6 +12,7 @@ export const addItem = (event) => {
       const newToDoItem = document.createElement('li');
       const checkBox = document.createElement('input');
       checkBox.type = 'checkbox';
+      checkBox.onclick = 'done-item()';
       checkBox.id = `chk-${newToDoName}`;
       checkBox.checked = false;
       checkBox.classList = 'uncompleted'; // Start with a 'uncompleted' task for css handling

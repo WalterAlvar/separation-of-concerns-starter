@@ -48,12 +48,23 @@ function filterToDo(e) {
 
 // mark completed
 
+
+const doneItem = (event) => {
+  
+  const currentItem = event.target;
+  currentItem.classList.toggle("completed");
+};
+
+const doneLi = document.querySelector('.todo-list');
+doneLi.addEventListener('click', doneItem);
+
+/*
 const markCompleted = (event) => {
   event.preventDefault();
   const checked = document.getElementById('chk-');
-  const todoListItems = ul.getElementsByTagName("li");
+  const todoListItems = checked.getElementsByTagName("li");
     if (todoListItems.checked){
-
+      todoListItems.classList.toggle('completed');
     }
 
 }
