@@ -6,9 +6,10 @@ import '../listeners/clear-button-listener.js';
 import '../handlers/remove-item.js';
 import '../listeners/remove-button-listener.js';
 //import '../listeners/nightmode-listener.js';
+import '../listeners/sort-list-listener.js';
+import '../handlers/sort-list.js';
 
-
-
+/*
 
 //sort list
 
