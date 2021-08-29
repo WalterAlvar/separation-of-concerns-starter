@@ -1,4 +1,4 @@
 import { filterToDo } from '../handlers/sort-list.js';
 
 const filterOpt = document.querySelector('.sorting-todo');
-filterOpt.addEventListener('click', filterToDo);
+filterOpt.addEventListener('change', filterToDo);
